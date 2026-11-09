@@ -8,11 +8,13 @@ I've spent 15+ years in this field across Chase, PayPal, MUFG Union Bank, Northe
  
 Most of my technical work starts with one question: *why are we still doing this by hand?*
  
-- **Case deduplication at scale:** A process gap left us with just over 9,000 duplicate and related cases, about a year's worth. I built a Google Apps Script tool, refined with Gemini AI, that flagged duplicates and combined related cases by customer attributes. We QA'd a 10% sample of its output before relying on it, and the backlog was fully cleared.
+- **Case deduplication at scale:** A process gap left us with just over 9,000 duplicate and related cases, about a year's worth. I built a Google Apps Script tool, refined with Gemini AI, that flagged duplicates and combined related cases by customer attributes. We QA'd a 10% sample of its output before relying on it, and the backlog was fully cleared. *(Public rebuild: [aml-case-dedup](https://github.com/angelalara1219/aml-case-dedup).)*
+- **CTR and GTO monitoring:** Built a daily CTR tracker that flagged single cash transactions over $10K, same-day aggregated transactions, and anything in FinCEN's GTO ZIP codes. I also tracked each GTO reissue and updated the ZIP list as coverage changed. *(Public rebuild: [ctr-gto-monitor](https://github.com/angelalara1219/ctr-gto-monitor).)*
 - **Alert threshold analysis:** Used SQL and Power BI to test where an alert rule should sit. The result was a $12K / 14-day threshold that captured 92.48% of confirmed fraud cases.
 - **Customer risk scoring:** Built the risk scoring model for EDD customers across three countries.
 - **Screening and onboarding setup:** Configured identity verification in Acuant and Onfido, tuned sanctions screening per jurisdiction in GBG, and helped launch Plaid for EDD.
 - **Everyday tooling:** Case triage tools, a multi-country SAR/STR/SMR filing tracker with automated date-stamping, Google Sheets dashboards for scam refunds, and monitoring of our Travel Rule automation for accuracy.
+- **Regulatory change tracking:** Weekly trackers that log new FinCEN alerts and advisories with their SAR key terms, and state money transmitter licensing changes from NMLS and CSBS, so staying current doesn't depend on someone remembering to check. *([fincen-advisory-guidance-tracker](https://github.com/angelalara1219/fincen-advisory-guidance-tracker) · [state-mt-licensing-tracker](https://github.com/angelalara1219/state-mt-licensing-tracker))*
 
 My rule for automation in compliance: let it clear the noise, check its work, and keep people on the judgment calls.
  
