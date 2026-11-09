@@ -14,7 +14,7 @@ Most of my technical work starts with one question: *why are we still doing this
 - **Customer risk scoring:** Built the risk scoring model for EDD customers across three countries.
 - **Screening and onboarding setup:** Configured identity verification in Acuant and Onfido, tuned sanctions screening per jurisdiction in GBG, and helped launch Plaid for EDD.
 - **Everyday tooling:** Case triage tools, a multi-country SAR/STR/SMR filing tracker with automated date-stamping, Google Sheets dashboards for scam refunds, and monitoring of our Travel Rule automation for accuracy.
-- **Regulatory change tracking:** Weekly trackers that log new FinCEN alerts and advisories with their SAR key terms, and state money transmitter licensing changes from NMLS and CSBS, so staying current doesn't depend on someone remembering to check. *([fincen-advisory-guidance-tracker](https://github.com/angelalara1219/fincen-advisory-guidance-tracker) · [state-mt-licensing-tracker](https://github.com/angelalara1219/state-mt-licensing-tracker))*
+- **Regulatory change tracking:** Trackers that log new FinCEN alerts and advisories with their SAR key terms, state money transmitter licensing changes from NMLS and CSBS, and sanctions list changes across the US, UK, Australia, and the UN, so staying current doesn't depend on someone remembering to check. *([fincen-advisory-guidance-tracker](https://github.com/angelalara1219/fincen-advisory-guidance-tracker) · [state-mt-licensing-tracker](https://github.com/angelalara1219/state-mt-licensing-tracker) · [sanctions-list-tracker](https://github.com/angelalara1219/sanctions-list-tracker))*
 
 My rule for automation in compliance: let it clear the noise, check its work, and keep people on the judgment calls.
  
@@ -29,8 +29,9 @@ My rule for automation in compliance: let it clear the noise, check its work, an
 
 - **[fincen-advisory-guidance-tracker](https://github.com/angelalara1219/fincen-advisory-guidance-tracker):** a weekly log of FinCEN alerts, advisories, and notices, with the SAR key term for each one pulled into one table, so no one has to dig through page 9 of a PDF.
 - **[state-mt-licensing-tracker](https://github.com/angelalara1219/state-mt-licensing-tracker):** a weekly log of state money transmitter licensing changes from NMLS and CSBS, plus a 50-state view of Money Transmission Modernization Act adoption.
+- **[sanctions-list-tracker](https://github.com/angelalara1219/sanctions-list-tracker):** a weekday log of additions, removals, and amendments across the US (OFAC), UK (FCDO), Australian (DFAT), and UN Security Council sanctions lists, with safety checks so a bad download never shows up as a mass delisting.
 
-The monitoring tools run on **synthetic data**, and the trackers use only public FinCEN, CSBS, and NMLS sources. Nothing comes from a former employer, and no real customer data is ever used.
+The monitoring tools run on **synthetic data**, and the trackers use only public FinCEN, CSBS, NMLS, and government sanctions list sources. Nothing comes from a former employer, and no real customer data is ever used.
  
 ## Tools
  
