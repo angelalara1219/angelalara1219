@@ -31,7 +31,12 @@ My rule for automation in compliance: let it clear the noise, check its work, an
 - **[state-mt-licensing-tracker](https://github.com/angelalara1219/state-mt-licensing-tracker):** a weekly log of state money transmitter licensing changes from NMLS and CSBS, plus a 50-state view of Money Transmission Modernization Act adoption.
 - **[sanctions-list-tracker](https://github.com/angelalara1219/sanctions-list-tracker):** a weekday log of additions, removals, and amendments across the US (OFAC), UK (FCDO), Australian (DFAT), and UN Security Council sanctions lists, with safety checks so a bad download never shows up as a mass delisting.
 
-The monitoring tools run on **synthetic data**, and the trackers use only public FinCEN, CSBS, NMLS, and government sanctions list sources. Nothing comes from a former employer, and no real customer data is ever used.
+**Third-party risk and ethics**
+
+- **[third-party-due-diligence](https://github.com/angelalara1219/third-party-due-diligence):** risk-based due diligence on resellers, agencies and vendors. It screens each third party and its owners against the sanctions lists from my tracker, scores anti-bribery red flags like government ties, high commissions and offshore payments, assigns a tier, and records every reviewer decision, including documented false-positive clearances. Re-screens every weekday.
+- **[gifts-coi-register](https://github.com/angelalara1219/gifts-coi-register):** a gifts, hospitality and conflicts of interest register in Google Sheets and Apps Script. It applies approval thresholds, stricter rules for government officials, 12-month pattern checks and a gifts-vs-conflicts cross-check, tracks annual attestations, and logs every decision.
+
+The monitoring tools run on **synthetic data**, and the trackers use only public FinCEN, CSBS, NMLS, and government sanctions list sources. The due diligence and ethics tools use synthetic third parties, employees and decisions. Nothing comes from a former employer, and no real customer data is ever used.
  
 ## Tools
  
